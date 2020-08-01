@@ -32,6 +32,12 @@ ggplot(data=averages, aes(x=interval, y=steps)) +
     ylab("average number of steps taken")
 ```
 
+On average across all the days in the dataset, the 5-minute interval contains
+the maximum number of steps?
+```{r}
+averages[which.max(averages$steps),]
+```
+
 ## Imputing missing values
 
 
